@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bento-site</title>
+    <link rel="stylesheet" href="a.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <h1 class="header-title">Aiko</h1>
+        <p class="header-subtitle">Web Developer Student</p>
+        <div class="header-line"></div>
+    </header>
+
+
+    <div class="bento-grid">
+    <div class="card card1" data-bg="frieren.jpg">
+    <h3>Обо мне</h3>
+    <p class="card-short">Привет! Я Aiko</p>
+    
+    <div class="card-full">
+        <p>Привет, я студент 3 курса колледжа, я разрабатываю свои первые сайты и этот сайт один из них</p>
+        <p>Помимо этого, я увлекаюсь:</p>
+        <ul>
+            <li>Видеоиграми 🎮</li>
+            <li>Музыкой 🎧</li>
+            <li>Просмотром аниме</li>
+        </ul>
+        <p>Подробнее расскажу в других карточках!</p>
+    </div>
+    </div>
+    
+   <div class="card card2" data-bg="ice.jpg">
+    <h3>Любимые треки</h3>
+    <div class="card-short">Плеер</div>
+    <div class="card-full">
+                <div class="player">
+                    <!-- Невидимый аудио-элемент -->
+                    <audio id="audioPlayer"></audio>
+                    
+                    <!-- Информация о текущем треке -->
+                    <div class="player-info">
+                        <h4 id="trackTitle">Название трека</h4>
+                        <p id="trackArtist">Исполнитель</p>
+                    </div>
+                    
+                    <!-- Кнопки управления -->
+                    <div class="player-controls">
+                        <button class="control-btn" id="prevBtn">⏮</button>
+                        <button class="control-btn" id="playBtn">▶</button>
+                        <button class="control-btn" id="nextBtn">⏭</button>
+                    </div>
+                    
+                    <!-- Прогресс-бар -->
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progressBar"></div>
+                    </div>
+                </div>
+            </div>
+    
+    </div>
+     <div class="card card3" data-bg="prgm.jpg">
+        <h3>Первый сайт</h3>
+        <div class="card-short">Ссылка на сайт</div>
+        <div class="card-full">
+        <h4>Предисловие</h4>
+        <p>Перед созданием этого сайта я создавал другой, более простой, но это был важный этап в изучении веб-разработки для меня! Не судите строго 😅</p>
+        <a href="https://yokkichan002-oss.github.io/my-first-site/" target="_blank" rel="noopener noreferrer" class="btn">Посмотреть мой первый сайт</a>
+    </div>
+    
+    </div>
+       <div class="card card4" data-bg="purple.jpg">
+        <h3>Любимые аниме</h3>
+        <div class="card-short">Топ тайтлов :3</div>
+        <div class="card-full">
+            <p>Топ 3 моих любимых аниме, которые советую посмотреть:</p>
+            <ul class="anime-list">
+                <li>
+                    <a href="https://shikimori.io/animes/z11757-sword-art-online" target="_blank" rel="noopener noreferrer">Мастера меча онлайн(САО)</a> 
+                    <span>— Одно из первых просмотренных мной аниме</span>
+                </li>
+                <li>
+                    <a href="https://shikimori.io/animes/33352-violet-evergarden" target="_blank" rel="noopener noreferrer">Вайолет Эвергарден</a> 
+                    <span>— Очень душевное аниме </span>
+                </li>
+                <li>
+                    <a href="https://shikimori.io/animes/52991-sousou-no-frieren" target="_blank" rel="noopener noreferrer">Провожающая в последний путь Фрирен</a> 
+                    <span>— Атмосферное аниме чтобы отдохнуть </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div id="modal-text"></div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
