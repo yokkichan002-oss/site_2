@@ -47,6 +47,21 @@
         url('purple.jpg');
     background-size: cover;
     background-position: center;
+    
+}
+.card6 {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+        url('mikasa.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.card5 {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+        url('fds.jpg');
+    background-size: cover;
+    background-position: center;
 }
 .card:hover{
     transform: scale(1.01);
@@ -98,6 +113,15 @@ body {
     color: #ffffff;
     border: 1px solid #333;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+
+    min-width: 400px;    /* Минимальная ширина */
+    min-height: 300px;   /* Минимальная высота */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .close-btn {
     position: absolute;
@@ -251,4 +275,50 @@ a {
 }
 .card-short {
     color: #ffff
+}
+/* Стили для списка характеристик ПК */
+.pc-specs {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.pc-specs li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pc-specs li:last-child {
+    border-bottom: none;
+}
+
+.spec-label {
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+.spec-value {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+}
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+.list li {
+     padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.spec-value1 {
+      color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
 }
